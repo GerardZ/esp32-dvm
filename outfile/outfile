@@ -1,0 +1,41 @@
+<script>
+    let socket = new WebSocket('ws://192.168.0.238/ws');
+
+    // message received - show the message in div#messages
+    socket.onmessage = function (event) {
+        let message = event.data;
+
+        let messageElem = document.createElement('div');
+        messageElem.textContent = message;
+        document.getElementById('messages').prepend(messageElem);
+    }
+
+    function toggle(){
+        socket.send("toggle");
+        console.debug("toggle");
+    }
+</script>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Webpage</title>
+</head>
+
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a sample webpage from the HTML dir.</p>
+
+    This is a test
+
+    <hr>
+    <!-- message form -->
+
+    <!-- div with messages -->
+    <div id="messages"></div>
+    <button onclick="toggle()">toggle</button>
+</body>
+
+</html>

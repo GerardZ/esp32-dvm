@@ -1,0 +1,22 @@
+body { 
+	max-width: 800px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+    background-color: aquamarine;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+div.ex1 {
+  width: 460px;
+  margin: auto;
+  border: 3px solid black;
+  padding: 20px;
+}

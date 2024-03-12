@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "ESP8266-first",
+			"path": "../../ESP8266-first"
+		}
+	],
+	"settings": {}
+}
